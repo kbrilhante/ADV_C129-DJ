@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-- p5 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.min.js" integrity="sha512-WJXVjqeINVpi5XXJ2jn0BSCfp0y80IKrYh731gLRnkAS9TKc5KNt/OfLtu+fCueqdWniouJ1ubM+VI/hbo7POQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js' integrity='sha512-WzkwpdWEMAY/W8WvP9KS2/VI6zkgejR4/KTxTl4qHx0utqeyVE0JY+S1DlMuxDChC7x0oXtk/ESji6a0lP/Tdg==' crossorigin='anonymous'></script>
+
+    <!-- ml5 -->
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+
+    <!-- font awesome -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css' integrity='sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==' crossorigin='anonymous'/>
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="background.jpg">
+    <div class="container-flex text-center">
+        <div class="bg-primary-subtle bg-gradient border-bottom border-5 border-primary-subtle">
+            <h1 class="text-primary-emphasis display-4 p-2">WEB DJ COM IA</h1>
+            <h3 class="fs-4 p-2">Mova o seu pulso esquerdo para controlar o volume e o direito para controlar a velocidade</h3>
+        </div>
+
+        <div class="divSpeed m-2">
+            <img class="imgDisk" src="disk.gif" alt="">
+            <h3 class="text-danger-emphasis bg-danger-subtle bg-gradient border border-2 border-danger-subtle rounded fs-5 p-2">
+                Velocidade:
+                <span id="lblSpeed">12</span>
+            </h3>
+        </div>
+        
+        <div class="divVolume m-2">
+            <img class="imgDisk" src="disk.gif" alt="">
+            <h3 class="text-success-emphasis bg-success-subtle bg-gradient border border-2 border-success-subtle rounded fs-5 p-2">
+                Volume:
+                <span id="lblVolume">8</span>
+            </h3>
+        </div>
+
+        <button id="play" onclick="play()" class="playButton btn btn-success rounded-circle border border-2 border-success-subtle fs-3 m-2">
+            <i class="fa-solid fa-play"></i>
+        </button>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

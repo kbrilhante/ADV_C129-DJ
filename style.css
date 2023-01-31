@@ -1,0 +1,21 @@
+body {
+    background-size: cover;
+}
+
+.divSpeed {
+    float: left;
+}
+
+.divVolume {
+    float: right;
+}
+
+.imgDisk {
+    width: 200px;
+    border-radius: 100px;
+}
+
+canvas {
+    border: 5px solid white;
+    border-radius: 20px;
+}
