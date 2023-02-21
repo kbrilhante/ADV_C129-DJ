@@ -61,10 +61,6 @@ function draw() {
     fill("#FF0000");
     circle(wrists.right.x, wrists.right.y, radius);
     mudaVelocidade();
-
-    stroke("#0000FF");
-    line(0, guideLine, width, guideLine);
-
 }
 
 function play() {
@@ -115,11 +111,11 @@ function mudaVolume() {
 }
 
 function mudaVelocidade() {
-    if(isPlaying) {
-    speed = (wrists.right.y * 5 / height) - 2.5;
-    speed = round(speed, 1);
-    speed = constrain(speed, -2.5, 2.5);
-    song.rate(speed);
+    if (isPlaying) {
+        speed = (wrists.right.y * 5 / height) - 2.5;
+        speed = round(speed, 1);
+        speed = constrain(speed, -2.5, 2.5);
+        song.rate(speed);
     } else {
         speed = 1;
     }
